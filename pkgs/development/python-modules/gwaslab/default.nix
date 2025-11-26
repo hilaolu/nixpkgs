@@ -63,7 +63,7 @@ buildPythonPackage rec {
       --replace-fail '"pySAM==0.22.1"' '"pySAM"' \
       --replace-fail '"adjustText>=0.7.3, <=0.8"' '"adjustText"' \
       --replace-fail '"gtfparse==1.3.0"' '"gtfparse"'
-    
+
     sed -i 's/requires-python = ">=3.9,<3.13"/requires-python = ">=3.9"/' pyproject.toml
   '';
 
