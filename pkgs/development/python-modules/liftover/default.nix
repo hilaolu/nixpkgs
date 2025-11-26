@@ -32,6 +32,7 @@ buildPythonPackage rec {
   dependencies = [
     cython
     urllib3
+    setuptools
   ];
 
   pythonImportsCheck = [
