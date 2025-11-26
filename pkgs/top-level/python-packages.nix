@@ -3455,6 +3455,8 @@ self: super: with self; {
 
   databricks-sql-connector = callPackage ../development/python-modules/databricks-sql-connector { };
 
+  datacache = callPackage ../development/python-modules/datacache { };
+
   dataclass-csv = callPackage ../development/python-modules/dataclass-csv { };
 
   dataclass-factory = callPackage ../development/python-modules/dataclass-factory { };
@@ -6524,6 +6526,8 @@ self: super: with self; {
 
   gto = callPackage ../development/python-modules/gto { };
 
+  gtfparse = callPackage ../development/python-modules/gtfparse { };
+
   gtts = callPackage ../development/python-modules/gtts { };
 
   gtts-token = callPackage ../development/python-modules/gtts-token { };
@@ -6557,6 +6561,8 @@ self: super: with self; {
   gviz-api = callPackage ../development/python-modules/gviz-api { };
 
   gvm-tools = callPackage ../development/python-modules/gvm-tools { };
+
+  gwaslab = callPackage ../development/python-modules/gwaslab { };
 
   gwcs = callPackage ../development/python-modules/gwcs { };
 
@@ -8598,6 +8604,8 @@ self: super: with self; {
 
   lifelines = callPackage ../development/python-modules/lifelines { };
 
+  liftover = callPackage ../development/python-modules/liftover { };
+
   lightgbm = callPackage ../development/python-modules/lightgbm { };
 
   lightify = callPackage ../development/python-modules/lightify { };
@@ -9362,6 +9370,8 @@ self: super: with self; {
   meld3 = callPackage ../development/python-modules/meld3 { };
 
   melnor-bluetooth = callPackage ../development/python-modules/melnor-bluetooth { };
+
+  memoized-property = callPackage ../development/python-modules/memoized-property { };
 
   memestra = callPackage ../development/python-modules/memestra { };
 
@@ -13159,6 +13169,8 @@ self: super: with self; {
 
   pyefergy = callPackage ../development/python-modules/pyefergy { };
 
+  pyensembl = callPackage ../development/python-modules/pyensembl { };
+
   pyegps = callPackage ../development/python-modules/pyegps { };
 
   pyeight = callPackage ../development/python-modules/pyeight { };
@@ -16717,6 +16729,8 @@ self: super: with self; {
 
   scikit-hep-testdata = callPackage ../development/python-modules/scikit-hep-testdata { };
 
+  scikit-allel = callPackage ../development/python-modules/scikit-allel { };
+
   scikit-image = callPackage ../development/python-modules/scikit-image { };
 
   scikit-learn = callPackage ../development/python-modules/scikit-learn { };
@@ -18749,6 +18763,8 @@ self: super: with self; {
   tinyobjloader-py = callPackage ../development/python-modules/tinyobjloader-py { };
 
   tinyrecord = callPackage ../development/python-modules/tinyrecord { };
+
+  tinytimer = callPackage ../development/python-modules/tinytimer { };
 
   tinysegmenter = callPackage ../development/python-modules/tinysegmenter { };
 
