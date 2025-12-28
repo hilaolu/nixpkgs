@@ -16214,6 +16214,8 @@ self: super: with self; {
 
   redshift-connector = callPackage ../development/python-modules/redshift-connector { };
 
+  redun = callPackage ../development/python-modules/redun { };
+
   reedsolo = callPackage ../development/python-modules/reedsolo { };
 
   referencing = callPackage ../development/python-modules/referencing { };
