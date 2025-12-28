@@ -5209,6 +5209,8 @@ self: super: with self; {
   falcon-cors = callPackage ../development/python-modules/falcon-cors { };
 
   falconpy = callPackage ../development/python-modules/falconpy { };
+ 
+  fancycompleter = callPackage ../development/python-modules/fancycompleter { };
 
   faraday-agent-parameters-types =
     callPackage ../development/python-modules/faraday-agent-parameters-types
