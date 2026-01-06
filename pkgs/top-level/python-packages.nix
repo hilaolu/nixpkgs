@@ -12191,6 +12191,8 @@ self: super: with self; {
 
   pipe = callPackage ../development/python-modules/pipe { };
 
+  pipe-operator = callPackage ../development/python-modules/pipe-operator { };
+
   piper-phonemize = callPackage ../development/python-modules/piper-phonemize {
     onnxruntime-native = pkgs.onnxruntime;
     piper-phonemize-native = pkgs.piper-phonemize;
