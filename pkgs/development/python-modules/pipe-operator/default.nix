@@ -1,7 +1,7 @@
 {
   lib,
   buildPythonPackage,
-  fetchPypi,
+  fetchFromGitHub,
   typing-extensions,
   setuptools,
   wheel,
@@ -9,13 +9,14 @@
 
 buildPythonPackage rec {
   pname = "pipe-operator";
-  version = "2.0.1";
+  version = "2.0.1-unstable-2026-01-09";
   pyproject = true;
 
-  src = fetchPypi {
-    pname = "pipe_operator";
-    inherit version;
-    sha256 = "e62ed39db42ea3bcc7184b36355603ad81a57fa68462e21868efe9e6444f26f7";
+  src = fetchFromGitHub {
+    owner = "hilaolu";
+    repo = "pipe-operator";
+    rev = "889e9b6f781c8f950cdcf92b566647738e02cee5";
+    hash = "sha256-cqIZY/wLuvAOnl0LYq9ZoYpT91daH3rn9SFfTtAZcLE=";
   };
 
   build-system = [
@@ -33,7 +34,7 @@ buildPythonPackage rec {
 
   meta = {
     description = "Elixir's pipe operator in Python";
-    homepage = "https://pypi.org/project/pipe-operator/";
+    homepage = "https://github.com/hilaolu/pipe-operator";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ ];
   };
