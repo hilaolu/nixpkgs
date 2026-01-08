@@ -15,8 +15,8 @@ buildPythonPackage rec {
   src = fetchFromGitHub {
     owner = "hilaolu";
     repo = "pipe-operator";
-    rev = "889e9b6f781c8f950cdcf92b566647738e02cee5";
-    hash = "sha256-cqIZY/wLuvAOnl0LYq9ZoYpT91daH3rn9SFfTtAZcLE=";
+    rev = "2a103630f7937d9f1cb639cfee75be8a910a7eaf";
+    hash = "sha256-8lQ7sWCm1HoJFyWcgVYlpJI7tPz1zMtsKmzW15Bm9lE=";
   };
 
   build-system = [
