@@ -664,6 +664,8 @@ self: super: with self; {
 
   alpha-vantage = callPackage ../development/python-modules/alpha-vantage { };
 
+  alphagenome = callPackage ../development/python-modules/alphagenome { };
+
   altair = callPackage ../development/python-modules/altair { };
 
   altcha = callPackage ../development/python-modules/altcha { };
@@ -5209,7 +5211,7 @@ self: super: with self; {
   falcon-cors = callPackage ../development/python-modules/falcon-cors { };
 
   falconpy = callPackage ../development/python-modules/falconpy { };
- 
+
   fancycompleter = callPackage ../development/python-modules/fancycompleter { };
 
   faraday-agent-parameters-types =
