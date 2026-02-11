@@ -2299,6 +2299,8 @@ self: super: with self; {
 
   bubop = callPackage ../development/python-modules/bubop { };
 
+  buckaroo = callPackage ../development/python-modules/buckaroo { };
+
   bucketstore = callPackage ../development/python-modules/bucketstore { };
 
   bugsnag = callPackage ../development/python-modules/bugsnag { };
