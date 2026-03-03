@@ -1850,6 +1850,73 @@ let
   ];
 
   otherOverrides = old: new: {
+    MRMix = buildRPackage {
+      name = "MRMix-0.1.0";
+      src = pkgs.fetchFromGitHub {
+        owner = "gqi";
+        repo = "MRMix";
+        rev = "56afdb2bc96760842405396f5d3f02e60e305039";
+        sha256 = "0ag4nscamzzf67aaciq8j6znll427d84w17b3gpq6x6rcvkn4g3f";
+      };
+    };
+
+    MRPRESSO = buildRPackage {
+      name = "MRPRESSO-1.0";
+      src = pkgs.fetchFromGitHub {
+        owner = "rondolab";
+        repo = "MR-PRESSO";
+        rev = "3e3c92d7eda6dce0d1d66077373ec0f7ff4f7e87";
+        sha256 = "16f13bz6iklbp2w4xkkf61klr7rpdqsh2vj6h0lrvvj9d5z60598";
+      };
+    };
+
+    RadialMR = buildRPackage {
+      name = "RadialMR-1.2.1";
+      src = pkgs.fetchFromGitHub {
+        owner = "WSpiller";
+        repo = "RadialMR";
+        rev = "68570e12d80f12eaf2051487240f2c5f94e7ab5e";
+        sha256 = "0isavnna1izjivj8lvigr5bz4xjdfyachfi309332xrx0fr4hqnb";
+      };
+      propagatedBuildInputs = with new; [
+        ggplot2
+        magrittr
+        plotly
+      ];
+    };
+
+    twosamplemr = buildRPackage {
+      name = "TwoSampleMR-0.7.0";
+      src = pkgs.fetchFromGitHub {
+        owner = "MRCIEU";
+        repo = "TwoSampleMR";
+        rev = "v0.7.0";
+        sha256 = "1bjjbxyklgpykn16fgzh24s1pjhx7xl2plbbda8jbnlzdqrwvan2";
+      };
+      propagatedBuildInputs = with new; [
+        cowplot
+        data_table
+        dplyr
+        ggplot2
+        glmnet
+        gridExtra
+        gtable
+        ieugwasr
+        jsonlite
+        knitr
+        lattice
+        magrittr
+        MASS
+        MRMix
+        MRPRESSO
+        pbapply
+        psych
+        RadialMR
+        reshape2
+        rmarkdown
+      ];
+    };
+
     ACME = old.ACME.overrideAttrs (attrs: {
       env = (attrs.env or { }) // {
         # Avoid incompatible pointer type error
